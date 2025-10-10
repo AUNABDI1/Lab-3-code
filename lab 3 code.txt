@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main() {
+    string name1, name2;
+    int qty1, qty2;
+    double price1, price2;
+
+    cout << "Product 1 Name: "<< endl;
+    cin >> name1;
+    cout << "Quantity: ";
+    cin >> qty1;
+    cout << "Price: ";
+    cin >> price1;
+    
+
+    cout << "\nProduct 2 Name: "<< endl;
+    cin >> name2;
+    cout << "Quantity: ";
+    cin >> qty2;
+    cout << "Price: ";
+    cin >> price2;
+
+    double total1 = qty1 * price1;
+    double total2 = qty2 * price2;
+
+    cout << " \n-------------------------------------------------------"<< endl;
+    cout << setw(14)<< left<< "Item" << setw(11)<< right<< "Quantity"<<setw(11)<< right<<"Price"<< setw(11)<< right<< "Total";
+    
+    cout << " \n-------------------------------------------------------"<< endl;
+    
+    cout << setw(14)<< left<< name1 << setw(11)<< right<< qty1<<setw(11)<< right<<price1<< setw(11)<< right<< total1<< endl;
+    
+    
+    cout << setw(14)<< left<< name2 << setw(11)<< right<< qty2<<setw(11)<< right<<price2<< setw(11)<< right<< total2;
+    
+    
+    
+    
+    return 0;
+}
